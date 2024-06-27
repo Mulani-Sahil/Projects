@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Azmat Fatima English School And Junior College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #2980b9;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ecf0f1;
+        }
+
+        nav .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        nav .search-bar button {
+            padding: 5px 10px;
+            background-color: #ecf0f1;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        nav .search-bar button:hover {
+            background-color: #bdc3c7;
+        }
+
+        /* Container and text section styles */
+        .container {
+            max-width: 1200px;
+            width: 95%;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .text-section {
+            max-width: 50%;
+        }
+
+        .text-section h1 {
+            font-size: 3em;
+            margin: 0 0 10px;
+            color: #2c3e50;
+        }
+
+        .text-section p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-right: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .buttons button:last-child {
+            background-color: #ecf0f1;
+            color: #3498db;
+            border: 1px solid #3498db;
+        }
+
+        .buttons button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .buttons button:last-child:hover {
+            background-color: #bdc3c7;
+        }
+
+        /* Image section styles */
+        .image-section {
+            max-width: 45%;
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Welcome section styles */
+        .welcome-section {
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 60px 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .welcome-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #ecf0f1;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            max-width: 30%;
+            margin-bottom: 20px;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .feature p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* About us section styles */
+        .about-us-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .about-us-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .about-box {
+            max-width: 30%;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-box h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .about-box p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .about-icon {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Teachers section styles */
+        .teachers-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .teachers-section h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .teacher-profile {
+            max-width: 45%;
+            margin: 0 auto 20px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .teacher-profile h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .teacher-profile p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .teacher-profile img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Classrooms section styles */
+        .classrooms-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .classrooms-section h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .classroom-details {
+            max-width: 45%;
+            margin: 0 auto 20px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .classroom-details h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .classroom-details p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Cleanliness section styles */
+        .cleanliness-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cleanliness-section h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .cleanliness-section p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-section, .image-section {
+                max-width: 100%;
+            }
+
+            .about-box, .teacher-profile, .classroom-details {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="admissionform.html">Admission</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+
+            <li class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="container">
+                <div class="text-section">
+                    <h1><font color="black">Welcome to Azmat Fatima English School And Junior College</font></h1>
+                    <p>Empowering students through quality education since 2010.</p>
+                    <div class="buttons">
+                        <button>Learn More</button>
+                        <button>Apply Now</button>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="college.jpg" alt="College Building">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-us-section">
+            <div class="container">
+                <h1>About Us</h1>
+                <div class="about-us-content">
+                    <div class="about-box">
+                        <div class="about-icon">1</div>
+                        <h2>Our Mission</h2>
+                        <p>To provide inclusive and quality education to all students.</p>
+                    </div>
+                    <div class="about-box">
+                        <div class="about-icon">2</div>
+                        <h2>Our Vision</h2>
+                        <p>To be a leading educational institution fostering holistic development.</p>
+                    </div>
+                    <div class="about-box">
+                        <div class="about-icon">3</div>
+                        <h2>Our Values</h2>
+                        <p>Excellence, Integrity, and Community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teachers Section -->
+        <section class="teachers-section">
+            <div class="container">
+                <h1>Our Teachers</h1>
+                <div class="teacher-profile">
+                    <img src="team-5.jpg" alt="Teacher 1">
+                    <h2>John Doe</h2>
+                    <p>Mathematics Teacher</p>
+                </div>
+                <div class="teacher-profile">
+                    <img src="team-5.jpg" alt="Teacher 2">
+                    <h2>Jane Smith</h2>
+                    <p>English Teacher</p>
+                </div>
+                <div class="teacher-profile">
+                    <img src="team-5.jpg" alt="Teacher 3">
+                    <h2>Michael Johnson</h2>
+                    <p>Science Teacher</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classrooms Section -->
+        <section class="classrooms-section">
+            <div class="container">
+                <h1>Our Classrooms</h1>
+                <div class="classroom-details">
+                    <h2>Classroom 101</h2>
+                    <p>A spacious and well-equipped classroom conducive to learning.</p>
+                </div>
+                <div class="classroom-details">
+                    <h2>Classroom 202</h2>
+                    <p>Modern facilities with interactive whiteboards for engaging lessons.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cleanliness Section -->
+        <section class="cleanliness-section">
+            <div class="container">
+                <h1>Cleanliness and Hygiene</h1>
+                <p>We prioritize cleanliness and hygiene across our campus to ensure a safe and healthy environment for all.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
