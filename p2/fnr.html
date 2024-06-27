@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities and Resources - Azmat Fatima English School And Junior College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #2980b9;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ecf0f1;
+        }
+
+        nav .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        nav .search-bar button {
+            padding: 5px 10px;
+            background-color: #ecf0f1;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        nav .search-bar button:hover {
+            background-color: #bdc3c7;
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 1200px;
+            width: 95%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .facilities {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .facility {
+            max-width: 45%;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .facility img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .facility h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .facility p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .facility {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="admissionform.html">Admission</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+
+            <li class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Facilities and Resources Section -->
+        <section class="container">
+            <h1 class="title">Facilities and Resources</h1>
+            <div class="facilities">
+                <div class="facility">
+                    <img src="tech-enabled-classrooms.png" alt="Tech-Enabled Classrooms">
+                    <h3>Tech-Enabled Classrooms</h3>
+                    <p>Modern, technology-integrated classrooms to enhance the learning experience.</p>
+                </div>
+                <div class="facility">
+                    <img src="advanced-laboratories.png" alt="Advanced Laboratories">
+                    <h3>Advanced Laboratories</h3>
+                    <p>Well-equipped science and computer labs that promote hands-on learning.</p>
+                </div>
+                <div class="facility">
+                    <img src="expansive-library.png" alt="Expansive Library">
+                    <h3>Expansive Library</h3>
+                    <p>A comprehensive library with a vast collection of books and reference materials.</p>
+                </div>
+                <div class="facility">
+                    <img src="sports-facilities.png" alt="Sports Facilities">
+                    <h3>Sports Facilities</h3>
+                    <p>Spacious grounds and state-of-the-art sports facilities for a well-rounded education.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

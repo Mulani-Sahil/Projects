@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azmat Fatima English School And Junior College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-color: #f9f9f9;
+            --text-color: #2c3e50;
+            --nav-background-color: #2980b9;
+            --button-background-color: #2980b9;
+            --button-text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        nav {
+            background-color: var(--nav-background-color);
+            padding: 10px 20px;
+        }
+
+        nav ul li a {
+            color: var(--button-text-color);
+        }
+
+        .buttons button {
+            background-color: var(--button-background-color);
+            color: var(--button-text-color);
+        }
+
+        /* Dark Theme */
+        body.dark-theme {
+            --background-color: #2c3e50;
+            --text-color: #ecf0f1;
+            --nav-background-color: #34495e;
+            --button-background-color: #1abc9c;
+            --button-text-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="new(copy).html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="admissionform.html">Admission</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </li>
+            <li>
+                <button onclick="toggleTheme()">Toggle Theme</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="text-section">
+            <h1>Azmat Fatima English School And Junior College</h1>
+            <p>Elevating Minds, Empowering Futures - A premier educational institution committed to excellence.</p>
+            <div class="buttons">
+                <a href="fnr.html"><button>Learn More</button></a>
+                <a href="admission.html"><button>Apply Now</button></a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="college.jpg" alt="Azmat Fatima English School And Junior College">
+        </div>
+    </div>
+
+    <div class="welcome-section">
+        <h1>Welcome to Our Home</h1>
+        <div class="features">
+            <div class="feature">
+                <h2>Nurturing Environment</h2>
+                <p>Our campus provides a safe, supportive, and stimulating environment for students to thrive.</p>
+            </div>
+            <div class="feature">
+                <h2>Innovative Curriculum</h2>
+                <p>We offer a well-rounded education with a focus on academic excellence and holistic development.</p>
+            </div>
+            <div class="feature">
+                <h2>Dedicated Faculty</h2>
+                <p>Our experienced and passionate teachers are committed to unlocking the potential in every student.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us-section">
+        <h1>About Us</h1>
+        <div class="about-us-content">
+            <div class="about-box">
+                <div class="about-icon">1</div>
+                <h2>Legacy of Excellence</h2>
+                <p>Established in 2010, we have a long-standing tradition of academic success and student achievement.</p>
+            </div>
+            <div class="about-box">
+                <div class="about-icon">2</div>
+                <h2>Accredited Institution</h2>
+                <p>Azmat Fatima is a fully accredited school, recognized for its high standards and quality education.</p>
+            </div>
+            <div class="about-box">
+                <div class="about-icon">3</div>
+                <h2>Community Involvement</h2>
+                <p>We actively engage with the local community, fostering partnerships and giving back through service initiatives.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="admission-section">
+        <div class="admission-image">
+            <img src="admission.png" alt="Admission Process">
+        </div>
+        <div class="admission-text">
+            <h1>Admission Process</h1>
+            <div class="admission-item">
+                <h2>Application Requirements</h2>
+                <div class="admission-item-content">
+                    <p>Prospective students must submit a completed application form, academic transcripts, and relevant supporting documents.</p>
+                </div>
+            </div>
+            <div class="admission-item">
+                <h2>Entrance Exam</h2>
+                <div class="admission-item-content">
+                    <p>All applicants are required to take an entrance exam to assess their academic readiness and potential.</p>
+                </div>
+            </div>
+            <div class="admission-item">
+                <h2>Admission Timeline</h2>
+                <div class="admission-item-content">
+                    <p>The admission cycle opens in January, with a deadline in March for the upcoming academic year.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+
+        document.querySelectorAll('.admission-item h2').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+

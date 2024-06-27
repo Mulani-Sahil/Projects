@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azmat Fatima English School And Junior College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        nav {
+            background-color: #2980b9;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        nav .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        nav .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+        }
+        nav .search-bar button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            background-color: #ecf0f1;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        nav .search-bar button:hover {
+            background-color: #bdc3c7;
+        }
+        .container, .welcome-section, .about-us-section, .admission-section {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 20px;
+        }
+        .text-section {
+            max-width: 50%;
+            padding-right: 20px;
+        }
+        .text-section h1 {
+            font-size: 3em;
+            margin: 0 0 10px;
+            color: #2c3e50;
+        }
+        .text-section p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-right: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .buttons button:last-child {
+            background-color: #fff;
+            color: #2980b9;
+            border: 1px solid #2980b9;
+        }
+        .buttons button:hover {
+            background-color: #3498db;
+            transform: translateY(-2px);
+        }
+        .buttons button:last-child:hover {
+            background-color: #ecf0f1;
+        }
+        .image-section {
+            max-width: 50%;
+        }
+        .image-section img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+        .welcome-section {
+            text-align: center;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 60px 20px;
+        }
+        .welcome-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #ecf0f1;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+            flex-wrap: wrap;
+        }
+        .feature {
+            max-width: 30%;
+            margin-bottom: 20px;
+        }
+        .feature h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ecf0f1;
+        }
+        .feature p {
+            font-size: 1em;
+            color: #bdc3c7;
+        }
+        .about-us-section h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .about-us-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .about-box {
+            max-width: 30%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .about-box h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .about-box p {
+            font-size: 1em;
+            color: #555;
+        }
+        .about-icon {
+            display: inline-block;
+            background-color: #2980b9;
+            color: #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .admission-section {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            flex-wrap: wrap;
+            background: linear-gradient(135deg, #2980b9, #6dd5fa);
+            color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .admission-image {
+            max-width: 45%;
+            margin-right: 20px;
+        }
+        .admission-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .admission-text {
+            max-width: 50%;
+        }
+        .admission-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .admission-text h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            cursor: pointer;
+            background: #ecf0f1;
+            color: #2980b9;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .admission-text h2:hover {
+            background-color: #bdc3c7;
+        }
+        .admission-text p {
+            font-size: 1em;
+            color: #fff;
+        }
+        .admission-item {
+            margin-bottom: 20px;
+        }
+        .admission-item h2 {
+            margin: 0;
+            padding: 10px;
+            background: #ecf0f1;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .admission-item-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+            background: #fff;
+            color: #555;
+        }
+        .admission-item.active .admission-item-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="new(copy).html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="admissionform.html">Admission</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="text-section">
+            <h1>Azmat Fatima English School And Junior College</h1>
+            <p>Elevating Minds, Empowering Futures - A premier educational institution committed to excellence.</p>
+            <div class="buttons">
+                <a href="fnr.html"><button>Learn More</button></a>
+            <a href="admission.html">    <button>Apply Now</button></a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="college.jpg" alt="Azmat Fatima English School And Junior College">
+        </div>
+    </div>
+
+    <div class="welcome-section">
+        <h1>Welcome to Our Home</h1>
+        <div class="features">
+            <div class="feature">
+                <h2>Nurturing Environment</h2>
+                <p>Our campus provides a safe, supportive, and stimulating environment for students to thrive.</p>
+            </div>
+            <div class="feature">
+                <h2>Innovative Curriculum</h2>
+                <p>We offer a well-rounded education with a focus on academic excellence and holistic development.</p>
+            </div>
+            <div class="feature">
+                <h2>Dedicated Faculty</h2>
+                <p>Our experienced and passionate teachers are committed to unlocking the potential in every student.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us-section">
+        <h1>About Us</h1>
+        <div class="about-us-content">
+            <div class="about-box">
+                <div class="about-icon">1</div>
+                <h2>Legacy of Excellence</h2>
+                <p>Established in 2010, we have a long-standing tradition of academic success and student achievement.</p>
+            </div>
+            <div class="about-box">
+                <div class="about-icon">2</div>
+                <h2>Accredited Institution</h2>
+                <p>Azmat Fatima is a fully accredited school, recognized for its high standards and quality education.</p>
+            </div>
+            <div class="about-box">
+                <div class="about-icon">3</div>
+                <h2>Community Involvement</h2>
+                <p>We actively engage with the local community, fostering partnerships and giving back through service initiatives.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="admission-section">
+        <div class="admission-image">
+            <img src="admission.png" alt="Admission Process">
+        </div>
+        <div class="admission-text">
+            <h1>Admission Process</h1>
+            <div class="admission-item">
+                <h2>Application Requirements</h2>
+                <div class="admission-item-content">
+                    <p><font color="  #32a0a9   ">Prospective students must submit a completed application form, academic transcripts, and relevant supporting documents.</font></p>
+                </div>
+            </div>
+            <div class="admission-item">
+                <h2>Entrance Exam</h2>
+                <div class="admission-item-content">
+                    <p><font color="  #32a0a9   ">All applicants are required to take an entrance exam to assess their academic readiness and potential.</font></p>
+                </div>
+            </div>
+            <div class="admission-item">
+                <h2>Admission Timeline</h2>
+                <div class="admission-item-content">
+                    <p><font color="  #32a0a9   ">The admission cycle opens in January, with a deadline in March for the upcoming academic year.</font></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.admission-item h2').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
